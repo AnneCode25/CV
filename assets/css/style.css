@@ -82,3 +82,34 @@ footer {
 footer p {
     margin-top: 10px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.corps_CV {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.a_propos {
+    flex:1;
+    background-color: #782221;
+}
+
+.langue {
+    flex:1;
+    background-color: #782221;
+}
+
+.interest {
+    flex:1;
+    background-color: #782221;
+}
+
+.description {
+    text-indent: 20px;
+}
+
+.corps_CV h2 {
+    background-color: #dbc2a4;
+}
