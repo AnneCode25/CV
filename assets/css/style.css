@@ -13,6 +13,13 @@ header {
     align-items: center;
 }
 
+h1, h2,h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+p, ul {
+    font-family: 'Raleway', sans-serif;
+}
 
 .photo {
     width: 200px;
@@ -53,13 +60,21 @@ header {
     padding-right: 50px;
 }
 
+.adress, .mail, .tel {
+    text-decoration: none;
+}
+
+.adress:hover, .mail:hover, .tel:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #782221;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
+    padding-top: 50px;
 }
 
 .logo_container{
@@ -83,33 +98,81 @@ footer p {
     margin-top: 10px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.corps_CV {
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+main h2 {
+    color: black;
+}
+
+.left-side {
     display: flex;
     flex-direction: column;
     color: white;
+    flex: 1;
 }
 
 .a_propos {
     flex:1;
     background-color: #782221;
+    padding-right: 50px;
+    text-indent: 20px;
 }
 
-.langue {
+.langue, .interest {
     flex:1;
     background-color: #782221;
-}
-
-.interest {
-    flex:1;
-    background-color: #782221;
+    padding-right: 50px;
+    text-indent: 20px;
 }
 
 .description {
     text-indent: 20px;
+    word-wrap: break-word;
+    text-align: justify;  
+    margin-left: 20px;
 }
 
-.corps_CV h2 {
+.left-side h2 {
     background-color: #dbc2a4;
+}
+
+.right-side {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.right-side h2 {
+    background-color: #dbc2a4;
+    padding-left: 20px;
+    border-left: #782221 solid 7px;
+}
+
+.xp_pro, .diplome, .competences {
+    position: relative;
+    padding-right: 10px;
+    transition: padding-right 0.3s ease
+}
+
+.xp_pro::after, .diplome::after, .competences::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #782221;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.xp_pro:hover, .diplome:hover, .competences:hover {
+    padding-right: 15px;
+}
+
+.xp_pro:hover::after, .diplome:hover::after, .competences:hover::after {
+    opacity: 1;
 }
