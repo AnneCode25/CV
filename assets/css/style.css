@@ -13,19 +13,11 @@ header {
     align-items: center;
 }
 
-h1 {
+h1, h2,h3 {
     font-family: 'Lato', sans-serif;
 }
 
-h2 {
-    font-family: 'Lato', sans-serif;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
-}
-
-ul {
+p, ul {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -66,6 +58,14 @@ ul {
     margin: auto;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.adress, .mail, .tel {
+    text-decoration: none;
+}
+
+.adress:hover, .mail:hover, .tel:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -122,14 +122,7 @@ main h2 {
     text-indent: 20px;
 }
 
-.langue {
-    flex:1;
-    background-color: #782221;
-    padding-right: 50px;
-    text-indent: 20px;
-}
-
-.interest {
+.langue, .interest {
     flex:1;
     background-color: #782221;
     padding-right: 50px;
@@ -158,80 +151,28 @@ main h2 {
     border-left: #782221 solid 7px;
 }
 
-.xp_pro {
+.xp_pro, .diplome, .competences {
     position: relative;
-    padding-right: 10px; /* Ajoutez un espace à droite pour la bordure */
+    padding-right: 10px;
     transition: padding-right 0.3s ease
 }
 
-.xp_pro::after {
+.xp_pro::after, .diplome::after, .competences::after {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 5px; /* Largeur de la bordure à droite */
+    width: 5px;
     background-color: #782221;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.xp_pro:hover {
-    padding-right: 15px; /* Augmentez l'espace à droite au survol */
+.xp_pro:hover, .diplome:hover, .competences:hover {
+    padding-right: 15px;
 }
 
-.xp_pro:hover::after {
-    opacity: 1; /* Rend la bordure visible au survol */
-}
-
-.diplome {
-    position: relative;
-    padding-right: 10px; /* Ajoutez un espace à droite pour la bordure */
-    transition: padding-right 0.3s ease
-}
-
-.diplome::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 5px; /* Largeur de la bordure à droite */
-    background-color: #782221;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.diplome:hover {
-    padding-right: 15px; /* Augmentez l'espace à droite au survol */
-}
-
-.diplome:hover::after {
-    opacity: 1; /* Rend la bordure visible au survol */
-}
-
-.competences {
-    position: relative;
-    padding-right: 10px; /* Ajoutez un espace à droite pour la bordure */
-    transition: padding-right 0.3s ease
-}
-
-.competences::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 5px; /* Largeur de la bordure à droite */
-    background-color: #782221;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.competences:hover {
-    padding-right: 15px; /* Augmentez l'espace à droite au survol */
-}
-
-.competences:hover::after {
-    opacity: 1; /* Rend la bordure visible au survol */
+.xp_pro:hover::after, .diplome:hover::after, .competences:hover::after {
+    opacity: 1;
 }
